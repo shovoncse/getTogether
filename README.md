@@ -1,0 +1,2 @@
+# getTogether
+MERN Project
