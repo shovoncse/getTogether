@@ -21,6 +21,14 @@ router.post('/', [
     if(!errors.isEmpty()){
         return res.status(400).json({errors: errors.array()});
     }
+ 
+    // see if user Exists
+
+    // Get users Gravatar
+
+    // Encrypt Password
+
+    // Return Jsonwebtoken
 
     // User.create({
     //     name: req.body.name,
