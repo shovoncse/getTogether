@@ -51,13 +51,6 @@ router.post('/', [
     // Encrypt Password
 
     // Return Jsonwebtoken
-
-    // User.create({
-    //     name: req.body.name,
-    //     email: req.body.email,
-    //     password: req.body.password,
-    //     date: req.body.date+
-    // });
 });
 
 module.exports = router;
