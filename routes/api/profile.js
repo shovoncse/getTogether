@@ -39,7 +39,14 @@ router.post('/', [auth, [
             return res.status(400).json({errors: errors.array()});
         }
         // Get data from request
-        const {name, email, password} = req.body;
+        const {
+            status,
+            company,
+            website,
+            location,
+            skills,
+            
+        } = req.body;
         
 
         const profile = await Profile.findOne({user: req.user.id}).populate('user', ['name', 'avatar'])
