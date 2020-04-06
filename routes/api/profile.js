@@ -26,7 +26,7 @@ router.get('/me', auth, async (req, res) => {
     } 
 });
 
-// @route   GET api/profile
+// @route   POST api/profile
 // @desc    Test Route
 // @access  Public
 router.post('/', [auth, [
@@ -51,13 +51,7 @@ router.post('/', [auth, [
 
         } = req.body;
         
-
-        const profile = await Profile.findOne({user: req.user.id}).populate('user', ['name', 'avatar'])
-
-        if(!profile){
-            return res.status(400).json({msg: 'There is no profile'})
-        }
-
+        
         res.json(profile);
 
     }catch(err){
