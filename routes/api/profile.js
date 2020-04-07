@@ -47,7 +47,9 @@ router.post('/', [auth, [
             skills,
             bio,
             githubusername,
-            experience
+            experience,
+            education,
+            social
 
         } = req.body;
         
