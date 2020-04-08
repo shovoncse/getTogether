@@ -47,10 +47,12 @@ router.post('/', [auth, [
             skills,
             bio,
             githubusername,
-            experience,
             education,
-            social
-
+            youtube,
+            facebook,
+            twitter,
+            instagram,
+            linkedin
         } = req.body;
         
         
