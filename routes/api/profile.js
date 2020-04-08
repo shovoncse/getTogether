@@ -73,6 +73,13 @@ router.post('/', [auth, [
 
         // Build Social Object
         profileFields.social = {}
+        if(youtube) profileFields.social.youtube = youtube;
+        if(twitter) profileFields.social.twitter = twitter;
+        if(facebook) profileFields.social.facebook = facebook;
+        if(linkedin) profileFields.social.linkedin = linkedin;
+        if(instagram) profileFields.social.instagram = instagram;
+        
+        
         res.json(profile);
 
     }catch(err){
