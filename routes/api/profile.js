@@ -68,8 +68,11 @@ router.post('/', [auth, [
         if(githubusername) profileFields.githubusername = githubusername;
         // Skills Array
         if(skills){
-            profileFields.skills = skills.split(',').map(item => item.trim());
+            profileFields.skills = skills.split(',').map(item => item.trim())
         }
+
+        // Build Social Object
+        profileFields.social = {}
         res.json(profile);
 
     }catch(err){
