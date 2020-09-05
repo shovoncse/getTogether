@@ -1,2 +1,2 @@
-# getTogether
+# GetTogether
 MERN Project
